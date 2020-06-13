@@ -10,3 +10,53 @@
   -ms-user-select: none;
   -webkit-user-select: none;
 }
+
+.pin-login__text{
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+  width: 50%;
+  font-size: 0.5em;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: default;
+}
+
+.pin-login__text--error {
+  color: red;
+  background: green;
+  animation: loginError 0.1s backwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes loginError {
+  25% {transform: translateX(-3px);}
+  75% {transform: translateX(3px);}
+}
+
+@moz-keyframes loginError {
+  25% {transform: translateX(-3px);}
+  75% {transform: translateX(3px);}
+}
+
+.pin-login__key{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  color: blue;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pin-login__key:active{
+  background: rgba(0, 0, 0, 0.25);
+}
